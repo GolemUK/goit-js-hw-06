@@ -8,8 +8,9 @@ const colorButton = document.querySelector(".change-color");
 const spanColor = document.querySelector(".color");
 const colorBody = document.querySelector("body");
 
-colorButton.addEventListener("click", (e) => {
+colorButton.addEventListener("click", randomColorBody);
+function randomColorBody (event) {
   colorBody.style.background = colors;
   spanColor.textContent = colors;
   console.log(e)
-});
+};
